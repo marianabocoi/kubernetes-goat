@@ -16,3 +16,5 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           directory: .
+          output_format: github_failed_only
+          log_level: DEBUG
