@@ -17,4 +17,4 @@ jobs:
         with:
           directory: .
           output_format: github_failed_only
-          log_level: DEBUG
+          log_level: INFO
