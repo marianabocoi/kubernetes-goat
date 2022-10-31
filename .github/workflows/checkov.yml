@@ -13,5 +13,4 @@ jobs:
         with:
           directory: ${{ github.workspace }}
           framework: all
-          output_format: cli
           log_level: INFO
