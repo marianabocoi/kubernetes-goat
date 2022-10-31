@@ -7,14 +7,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
-      - name: check structure
-        run: |
-          ls .
-          ls ${{ github.workspace }}
       - name: Run Checkov action
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: .
-          output_format: github_failed_only
+          directory: ${{ github.workspace }}
+          framework: all
+          output_format: cli
           log_level: INFO
